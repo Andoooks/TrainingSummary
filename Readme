@@ -1,0 +1,15 @@
+To get the Min time per event, Q1 time per event, median time per event, mean time per event, Q3 Time per event, in the javascript it wrote custom function to handle the math manually, 
+
+1. it uses method called lineal interpolation this method is similar to numpy.quantile
+
+2. No library need because most in javascript math libraries uses different "interpolation" types. By writing function manually, it can use the formula of (n-1)*q formula. (specific standard in python code)
+
+3. Data Parsing Library, it uses PapaParse Library to read CSV file and it turn a raw text file into structured array of data that the math function can then process.
+
+Statistic	    How it's calculated in the code
+Min	          s[0] (The first item in the sorted list)
+Q1	          getQ(0.25) (The 25th percentile mark)
+Median	      getQ(0.50) (The exact middle of the data)
+Mean	        Sum / Count (The mathematical average)
+Q3	          getQ(0.75) (The 75th percentile mark)
+Max	          s[n-1] (The last item in the sorted list)
