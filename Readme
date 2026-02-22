@@ -1,6 +1,6 @@
 To get the Min time per event, Q1 time per event, median time per event, mean time per event, Q3 Time per event, in the javascript it wrote custom function to handle the math manually, 
 
-1. it uses method called lineal interpolation this method is similar to numpy.quantile
+1. it uses method called linear interpolation this method is similar to numpy.quantile
 
 2. No library need because most in javascript math libraries uses different "interpolation" types. By writing function manually, it can use the formula of (n-1)*q formula. (specific standard in python code)
 
